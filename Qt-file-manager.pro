@@ -28,12 +28,12 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     filesystemmodel.cpp \
-    filesystemview.cpp
+    filesystemview.cpp \
 
 HEADERS += \
         mainwindow.h \
     filesystemmodel.h \
-    filesystemview.h
+    filesystemview.h \
 
 FORMS += \
         mainwindow.ui
@@ -42,3 +42,9 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    Resources/Add_dir.png
+
+RESOURCES += \
+    file-manager-resource.qrc
