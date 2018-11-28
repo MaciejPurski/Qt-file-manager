@@ -29,14 +29,17 @@ SOURCES += \
         mainwindow.cpp \
     filesystemmodel.cpp \
     filesystemview.cpp \
+    adddirdialog.cpp
 
 HEADERS += \
         mainwindow.h \
     filesystemmodel.h \
     filesystemview.h \
+    adddirdialog.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    adddirdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

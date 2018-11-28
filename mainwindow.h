@@ -29,8 +29,9 @@ public slots:
                          const QItemSelection &deselected);
     void enterDirectory(const QModelIndex &index);
 private slots:
-    void on_toolButton_2_clicked();
-    void on_tableView_entered(const QModelIndex &index);
+    void goToParentDir();
+    void on_actionEnter_Directory_triggered();
+    void on_actionAddDirectory_triggered();
 };
 
 #endif // MAINWINDOW_H

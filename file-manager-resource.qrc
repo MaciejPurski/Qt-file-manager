@@ -1,5 +1,12 @@
 <RCC>
     <qresource prefix="/new/prefix1">
         <file>images/Add_dir.png</file>
+        <file>images/parent.png</file>
+        <file>images/cut.png</file>
+        <file>images/paste.png</file>
+        <file>images/down.png</file>
+        <file>images/copy.png</file>
+        <file>images/delete.png</file>
+        <file>images/edit.png</file>
     </qresource>
 </RCC>
