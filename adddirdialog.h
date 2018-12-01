@@ -15,6 +15,13 @@ public:
     explicit AddDirDialog(QWidget *parent = 0);
     ~AddDirDialog();
 
+private slots:
+    void on_textEdit_textChanged();
+
+    void on_okButton_clicked();
+
+    void on_cancelButton_clicked();
+
 private:
     Ui::AddDirDialog *ui;
 };

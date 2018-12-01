@@ -7,7 +7,7 @@
 #include <QDir>
 #include <QDebug>
 #include <iostream>
-
+#include <QInputDialog>
 /*
  * wymagania:
  * - nazwa okna inna niz main
@@ -106,6 +106,9 @@ void MainWindow::on_actionEnter_Directory_triggered()
 
 void MainWindow::on_actionAddDirectory_triggered()
 {
+//    QInputDialog *messageBox = new QInputDialog(this);
+
+  //  messageBox->exec();
     AddDirDialog *dialogBox = new AddDirDialog(this);
 
     dialogBox->exec();
