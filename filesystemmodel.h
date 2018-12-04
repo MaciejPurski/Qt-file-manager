@@ -16,12 +16,14 @@ public:
     virtual int columnCount(const QModelIndex& parent = QModelIndex()) const;
     virtual QVariant data(const QModelIndex& index, int role) const;
     virtual QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const;
+    bool copy(QModelIndex src, QModelIndex dst);
 
 
     virtual ~FileSystemModel() { }
 
 private:
     enum ColumnSection { NAME, SIZE, TYPE, MODIFIED, PERMISSIONS, OWNER, GROUP };
+    bool copyPath(QString sourceDir, QString destinationDir, bool overWriteDirectory);
 };
 
 #endif // FILESYSTEMMODEL_H
